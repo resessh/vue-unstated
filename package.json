@@ -1,0 +1,26 @@
+{
+  "name": "vue-unstated",
+  "version": "0.0.1",
+  "description": "A tiny state management library for Vue Composition API.",
+  "repository": "ssh://git@github.com/resessh/vue-unstated.git",
+  "author": "resessh <info@resessh.net>",
+  "license": "MIT",
+  "source": "src/vue-unstated.ts",
+  "main": "dist/vue-unstated.js",
+  "module": "dist/vue-unstated.mjs",
+  "unpkg": "dist/vue-unstated.umd.js",
+  "types": "dist/vue-unstated.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && microbundle src/index.ts --external @vue/composition-api --globals @vue/composition-api=vueCompositionApi --strict -o dist",
+    "prettier": "prettier --write ./**/*.ts"
+  },
+  "devDependencies": {
+    "@vue/composition-api": "^0.3.4",
+    "microbundle": "^0.11.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.3"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^0.3.4"
+  }
+}
