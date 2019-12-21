@@ -2,6 +2,7 @@
 node_modules
 .rts2_cache_*
 lib
+coverage
 
 # Log files
 npm-debug.log*

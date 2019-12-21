@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "lib": ["esnext", "dom"],
+    "experimentalDecorators": true,
+    "declaration": false,
+    "allowJs": true,
+    "noEmit": true,
+    "types": ["@types/jest"]
+  },
+  "include": ["/src/**/*", "./specs/**/*"]
+}
