@@ -1,6 +1,7 @@
 ![logo](./assets/logo.png)
 
 [![version](https://img.shields.io/npm/v/vue-unstated.svg)](https://www.npmjs.com/package/vue-unstated)
+![](https://github.com/resessh/vue-unstated/workflows/Build/badge.svg)
 [![typescript](https://camo.githubusercontent.com/832d01092b0e822178475741271b049a2e27df13/68747470733a2f2f62616467656e2e6e65742f62616467652f2d2f547970655363726970742f626c75653f69636f6e3d74797065736372697074266c6162656c)](https://www.typescriptlang.org/docs/home.html)
 
 ----
