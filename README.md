@@ -1,10 +1,12 @@
 ![logo](./assets/logo.png)
 
-[![version](https://img.shields.io/npm/v/vue-unstated.svg)](https://www.npmjs.com/package/vue-unstated)
-![](https://github.com/resessh/vue-unstated/workflows/Build/badge.svg)
-![](https://github.com/resessh/vue-unstated/workflows/Test/badge.svg)
-[![codecov](https://codecov.io/gh/resessh/vue-unstated/branch/master/graph/badge.svg)](https://codecov.io/gh/resessh/vue-unstated)
-[![typescript](https://camo.githubusercontent.com/832d01092b0e822178475741271b049a2e27df13/68747470733a2f2f62616467656e2e6e65742f62616467652f2d2f547970655363726970742f626c75653f69636f6e3d74797065736372697074266c6162656c)](https://www.typescriptlang.org/docs/home.html)
+<p align="center">
+<a href="https://www.npmjs.com/package/vue-unstated"><img src="https://img.shields.io/npm/v/vue-unstated.svg" alt="version"></a>
+<img src="https://github.com/resessh/vue-unstated/workflows/Build/badge.svg" alt="Build" />
+<img src="https://github.com/resessh/vue-unstated/workflows/Test/badge.svg" alt="Test" />
+<a href="https://codecov.io/gh/resessh/vue-unstated"><img src="https://codecov.io/gh/resessh/vue-unstated/branch/master/graph/badge.svg" alt="codecov" /></a>
+<a href="https://www.typescriptlang.org/docs/home.html"><img src="https://camo.githubusercontent.com/832d01092b0e822178475741271b049a2e27df13/68747470733a2f2f62616467656e2e6e65742f62616467652f2d2f547970655363726970742f626c75653f69636f6e3d74797065736372697074266c6162656c" alt="typescript" /></a>
+</p>
 
 ----
 # vue-unstated
