@@ -20,7 +20,7 @@
   "main": "lib/vue-unstated.js",
   "module": "lib/vue-unstated.mjs",
   "unpkg": "lib/vue-unstated.umd.js",
-  "types": "lib/vue-unstated.d.ts",
+  "types": "lib/index.d.ts",
   "files": [
     "lib",
     "src",
