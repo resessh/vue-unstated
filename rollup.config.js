@@ -12,7 +12,7 @@ export default () => {
     {
       input,
       output: {
-        name: pkg.name,
+        name: 'VueUnstated',
         file: pkg.unpkg,
         format: 'umd',
       },
