@@ -17,7 +17,7 @@
     "function-api"
   ],
   "main": "lib/vue-unstated.js",
-  "module": "lib/vue-unstated.mjs",
+  "module": "lib/vue-unstated.esm.js",
   "unpkg": "lib/vue-unstated.umd.js",
   "types": "lib/index.d.ts",
   "files": [
