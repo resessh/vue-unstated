@@ -16,28 +16,31 @@
     "composition-api",
     "function-api"
   ],
-  "source": "src/vue-unstated.ts",
   "main": "lib/vue-unstated.js",
   "module": "lib/vue-unstated.mjs",
   "unpkg": "lib/vue-unstated.umd.js",
   "types": "lib/index.d.ts",
   "files": [
-    "lib",
-    "src",
-    "tsconfig.json"
+    "lib"
   ],
   "scripts": {
-    "build": "rm -rf dist && microbundle src/index.ts --external @vue/composition-api --globals @vue/composition-api=vueCompositionApi --strict -o lib",
+    "build": "rm -rf lib && rollup -c",
     "prettier": "prettier --write ./**/*.ts",
     "test": "jest --coverage"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
     "@types/jest": "^24.0.24",
     "@vue/composition-api": "^0.3.4",
     "@vue/test-utils": "^1.0.0-beta.30",
     "jest": "^24.9.0",
-    "microbundle": "^0.11.0",
     "prettier": "^1.19.1",
+    "rollup": "^1.27.13",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-external-globals": "^0.5.0",
+    "rollup-plugin-terser": "^5.1.3",
+    "rollup-plugin-typescript2": "^0.25.3",
     "ts-jest": "^24.2.0",
     "typescript": "^3.7.4",
     "vue": "^2.6.11",
