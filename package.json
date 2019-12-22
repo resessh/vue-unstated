@@ -1,6 +1,6 @@
 {
   "name": "vue-unstated",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A tiny state management library for Vue Composition API.",
   "repository": "ssh://git@github.com/resessh/vue-unstated.git",
   "homepage": "https://github.com/resessh/vue-unstated#readme",
