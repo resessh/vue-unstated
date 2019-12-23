@@ -12,6 +12,9 @@
 # vue-unstated
 A tiny state management library for Vue Composition API based on [unstated-next](https://github.com/jamiebuilds/unstated-next) which is for React.
 
+## :horse_racing: Demo
+[![Edit [vue-unstated DEMO] Todo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/ugdg7-ugdg7?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fuse%2Ftodos.js&theme=dark)
+
 ## :electric_plug: Installation
 ```shell
 $ npm install --save vue-unstated
