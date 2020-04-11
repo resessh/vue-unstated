@@ -56,11 +56,12 @@ describe('useContainer', () => {
       },
     });
 
-    // @ts-ignore
     const ParentWrapper = mount(ParentComponent, { localVue });
     const ChildWrapper = ParentWrapper.find(ChildComponent);
+    // @ts-ignore
     expect(ChildWrapper.vm.state.count).toBe(0);
     ChildWrapper.find('button').trigger('click');
+    // @ts-ignore
     expect(ChildWrapper.vm.state.count).toBe(1);
   });
 
@@ -78,7 +79,6 @@ describe('useContainer', () => {
       },
     });
 
-    // @ts-ignore
     const ParentWrapper = mount(ParentComponent, { localVue });
     expect(ParentWrapper.vm.state.count).toBe(3);
   });
@@ -104,10 +104,8 @@ describe('useContainer', () => {
       },
     });
 
-    // @ts-ignore
     mount(ParentComponent, { localVue });
     expect(() => {
-      // @ts-ignore
       mount(ChildComponent, { localVue });
     }).toThrowError();
   });
