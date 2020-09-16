@@ -2,7 +2,7 @@ import {
   provide as _provide,
   inject,
   InjectionKey,
-} from '@vue/composition-api';
+} from 'vue-demi';
 
 export type ContainerProviderProps<State = void> = {
   initialState?: State;

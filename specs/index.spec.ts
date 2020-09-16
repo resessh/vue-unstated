@@ -41,9 +41,7 @@ describe('useContainer', () => {
 
         return { state, increment };
       },
-      render(h: CreateElement) {
-        return h('button', { on: { click: this.increment } });
-      },
+      template: `<button @click="increment"/>`,
     });
 
     const ParentComponent = defineComponent({
@@ -51,9 +49,7 @@ describe('useContainer', () => {
       setup() {
         container.provide();
       },
-      render(h: CreateElement) {
-        return h(ChildComponent);
-      },
+      template: `<ChildComponent/>`,
     });
 
     const ParentWrapper = mount(ParentComponent, { localVue });
@@ -74,9 +70,7 @@ describe('useContainer', () => {
 
         return { state };
       },
-      render(h: CreateElement) {
-        return h('div');
-      },
+      template: `<div/>`,
     });
 
     const ParentWrapper = mount(ParentComponent, { localVue });
@@ -90,18 +84,14 @@ describe('useContainer', () => {
 
         return { state, increment };
       },
-      render(h: CreateElement) {
-        return h('div');
-      },
+      template: `<div/>`,
     });
 
     const ParentComponent = defineComponent({
       setup() {
         container.provide();
       },
-      render(h: CreateElement) {
-        return h('div');
-      },
+      template: `<div/>`,
     });
 
     mount(ParentComponent, { localVue });

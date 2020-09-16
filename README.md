@@ -26,11 +26,10 @@ $ yarn add vue-unstated
 ```
 
 ## :surfer: Usage
-:warning: Currently you must use `@vue/composition-api`.
-
 __use/counter.js__
 ```js
-import { reactive } from '@vue/composition-api'
+import { reactive } from '@vue/composition-api' // Vue 2 with @vue/composition-api
+import { reactive } from 'vue' // or Vue 3
 import { createContainer } from 'vue-unstated'
 
 const useCounter = (initialState = { count: 0 }) => {
@@ -84,56 +83,6 @@ export default {
   }
 }
 </script>
-```
-
-## :wrench: API
-
-### createContainer(useComposition: function): Container
-```js
-import { reactive } from '@vue/composition-api'
-import { createContainer } from 'vue-unstated'
-
-const useCounter = (initialState = { count: 0 }) => {
-  const state = reactive(initialState)
-
-  const increment = () => {
-    state.count++
-  }
-
-  const decrement = () => {
-    state.count--
-  }
-
-  return { state, increment, decrement }
-}
-
-export const counterContainer = createContainer(useCounter)
-```
-
-### Container.provide(props: { initialState: any }): Composition
-```js
-export default {
-  setup() {
-    // 'provide' function must be called in 'setup' function.
-    const {
-      state,
-      increment,
-      decrement
-    } = counterContainer.provide({
-      initialState: { count: 0 }
-    })
-  }
-}
-```
-
-### Container.useContainer(): Composition
-```js
-export default {
-  setup() {
-    // 'useContainer' function must be called in 'setup' function.
-    const { state, increment, decrement } = counterContainer.useContainer()
-  }
-}
 ```
 
 ## :checkered_flag: LICENSE
