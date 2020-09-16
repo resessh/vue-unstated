@@ -1,4 +1,8 @@
-import { provide as _provide, inject } from '@vue/composition-api';
+import {
+  provide as _provide,
+  inject,
+  InjectionKey,
+} from '@vue/composition-api';
 
 export type ContainerProviderProps<State = void> = {
   initialState?: State;
@@ -12,7 +16,7 @@ export type Container<Value, State = void> = {
 export function createContainer<Value, State = void>(
   useComposition: (initialState?: State) => Value
 ): Container<Value, State> {
-  let providerSymbol: Symbol;
+  let providerSymbol: InjectionKey<Value>;
 
   function provide(props?: ContainerProviderProps<State>): Value {
     providerSymbol = Symbol();
@@ -23,7 +27,7 @@ export function createContainer<Value, State = void>(
   }
 
   function useContainer(): Value {
-    const value = inject<Value>(providerSymbol);
+    const value = inject(providerSymbol);
     if (!value) {
       throw new Error('Container must be used in provided Component.');
     }
