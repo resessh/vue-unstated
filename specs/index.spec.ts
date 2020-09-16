@@ -1,7 +1,7 @@
 import { createLocalVue, mount } from '@vue/test-utils';
 import VueCompositionApi, {
   reactive,
-  createComponent,
+  defineComponent,
 } from '@vue/composition-api';
 import { createContainer } from '../src';
 
@@ -35,7 +35,7 @@ describe('useContainer', () => {
   );
 
   it('should work.', () => {
-    const ChildComponent = createComponent({
+    const ChildComponent = defineComponent({
       setup() {
         const { state, increment } = container.useContainer();
 
@@ -46,7 +46,7 @@ describe('useContainer', () => {
       },
     });
 
-    const ParentComponent = createComponent({
+    const ParentComponent = defineComponent({
       components: { ChildComponent },
       setup() {
         container.provide();
@@ -57,7 +57,7 @@ describe('useContainer', () => {
     });
 
     const ParentWrapper = mount(ParentComponent, { localVue });
-    const ChildWrapper = ParentWrapper.find(ChildComponent);
+    const ChildWrapper = ParentWrapper.findComponent(ChildComponent);
     // @ts-ignore
     expect(ChildWrapper.vm.state.count).toBe(0);
     ChildWrapper.find('button').trigger('click');
@@ -66,7 +66,7 @@ describe('useContainer', () => {
   });
 
   it('should work with initial props.', () => {
-    const ParentComponent = createComponent({
+    const ParentComponent = defineComponent({
       setup() {
         const { state } = container.provide({
           initialState: { count: 3 },
@@ -84,7 +84,7 @@ describe('useContainer', () => {
   });
 
   it('throws when used in a component not provided.', () => {
-    const ChildComponent = createComponent({
+    const ChildComponent = defineComponent({
       setup() {
         const { state, increment } = container.useContainer();
 
@@ -95,7 +95,7 @@ describe('useContainer', () => {
       },
     });
 
-    const ParentComponent = createComponent({
+    const ParentComponent = defineComponent({
       setup() {
         container.provide();
       },
