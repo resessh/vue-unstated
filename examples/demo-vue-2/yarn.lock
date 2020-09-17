@@ -7928,10 +7928,10 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue-unstated@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/vue-unstated/-/vue-unstated-0.1.0.tgz#911ca70a77017a52e12e9a24bced753634839f29"
-  integrity sha512-dSshYfjuvKpvF7VDxm9DIaHNhApfkhZfPyGFcJjI23XrRv5bkz6dsqucMWr2bPLLE51CyHI7t9deG034PWR/7w==
+vue-unstated@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/vue-unstated/-/vue-unstated-0.1.1.tgz#14dd128efbbed6f357991b234e08f9217217ecf2"
+  integrity sha512-132Wfs3WozvqKO1ZTaaQDA+C1xRb902Vl70XGbNQTqwEtSYbqGMoVtwm328XKSvDYS1kmxisYzM7TixxDbtKwA==
   dependencies:
     vue-demi "^0.3.3"
 
