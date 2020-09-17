@@ -4,6 +4,9 @@
   "workspaces": {
     "packages": [
       "packages/*"
+    ],
+    "nohoist": [
+      "demo-vue-3/**"
     ]
   }
 }
