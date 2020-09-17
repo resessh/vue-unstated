@@ -1,8 +1,4 @@
-import {
-  provide as _provide,
-  inject,
-  InjectionKey,
-} from 'vue-demi';
+import { provide as _provide, inject, InjectionKey } from 'vue-demi';
 
 export type ContainerProviderProps<State = void> = {
   initialState?: State;

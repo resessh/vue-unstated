@@ -29,7 +29,7 @@ export default () => {
           },
         }),
         externalGlobals({
-          '@vue/composition-api': 'vueCompositionApi',
+          vue: 'Vue',
         }),
       ],
     },
@@ -37,7 +37,7 @@ export default () => {
     // CommonJS and ES module
     {
       input,
-      external: ['@vue/composition-api'],
+      external: ['vue'],
       output: [
         {
           file: pkg.main,
