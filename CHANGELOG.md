@@ -1,3 +1,12 @@
+## [0.1.2](https://github.com/resessh/vue-unstated/compare/v0.1.1...v0.1.2) (2020-09-18)
+
+
+### Bug Fixes
+
+* remove unnecessary peer deps ([58d9d3d](https://github.com/resessh/vue-unstated/commit/58d9d3db791deb2a9d2fc76d5eb00b747e81f6ab))
+
+
+
 ## [0.1.1](https://github.com/resessh/vue-unstated/compare/v0.1.0...v0.1.1) (2020-09-17)
 
 
