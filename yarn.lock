@@ -5651,9 +5651,9 @@ rollup-plugin-babel@^4.3.3:
     rollup-pluginutils "^2.8.1"
 
 rollup-plugin-external-globals@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-external-globals/-/rollup-plugin-external-globals-0.6.0.tgz#026d146b4b33237f46056553ca128271cd5146e3"
-  integrity sha512-4K8R78OYy3wSwGCLg6LMoZt2TcQsBcUT9nJ0ZjNTHzBlndQXHq3EIvuo5NqzCQfzYsheJIP7bxsReiedhsrsuw==
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-external-globals/-/rollup-plugin-external-globals-0.6.1.tgz#861c260b5727144e0fd1b424b103f9f0282fc365"
+  integrity sha512-mlp3KNa5sE4Sp9UUR2rjBrxjG79OyZAh/QC18RHIjM+iYkbBwNXSo8DHRMZWtzJTrH8GxQ+SJvCTN3i14uMXIA==
   dependencies:
     "@rollup/pluginutils" "^4.0.0"
     estree-walker "^2.0.1"
