@@ -1070,17 +1070,6 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@jest/types@^26.3.0":
-  version "26.3.0"
-  resolved "https://registry.yarnpkg.com/@jest/types/-/types-26.3.0.tgz#97627bf4bdb72c55346eef98e3b3f7ddc4941f71"
-  integrity sha512-BDPG23U0qDeAvU4f99haztXwdAg3hz4El95LkAM+tHAqqhiVzRpEGHHU8EDxT/AnxOrA65YjLBwDahdJ9pTLJQ==
-  dependencies:
-    "@types/istanbul-lib-coverage" "^2.0.0"
-    "@types/istanbul-reports" "^3.0.0"
-    "@types/node" "*"
-    "@types/yargs" "^15.0.0"
-    chalk "^4.0.0"
-
 "@jest/types@^26.5.2":
   version "26.5.2"
   resolved "https://registry.yarnpkg.com/@jest/types/-/types-26.5.2.tgz#44c24f30c8ee6c7f492ead9ec3f3c62a5289756d"
@@ -4143,19 +4132,7 @@ jest-snapshot@^26.5.3:
     pretty-format "^26.5.2"
     semver "^7.3.2"
 
-jest-util@^26.1.0:
-  version "26.3.0"
-  resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-26.3.0.tgz#a8974b191df30e2bf523ebbfdbaeb8efca535b3e"
-  integrity sha512-4zpn6bwV0+AMFN0IYhH/wnzIQzRaYVrz1A8sYnRnj4UXDXbOVtWmlaZkO9mipFqZ13okIfN87aDoJWB7VH6hcw==
-  dependencies:
-    "@jest/types" "^26.3.0"
-    "@types/node" "*"
-    chalk "^4.0.0"
-    graceful-fs "^4.2.4"
-    is-ci "^2.0.0"
-    micromatch "^4.0.2"
-
-jest-util@^26.5.2:
+jest-util@^26.1.0, jest-util@^26.5.2:
   version "26.5.2"
   resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-26.5.2.tgz#8403f75677902cc52a1b2140f568e91f8ed4f4d7"
   integrity sha512-WTL675bK+GSSAYgS8z9FWdCT2nccO1yTIplNLPlP0OD8tUk/H5IrWKMMRudIQQ0qp8bb4k+1Qa8CxGKq9qnYdg==
@@ -6424,9 +6401,9 @@ trim-off-newlines@^1.0.0:
   integrity sha1-n5up2e+odkw4dpi8v+sshI8RrbM=
 
 ts-jest@^26.3.0:
-  version "26.4.1"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.4.1.tgz#08ec0d3fc2c3a39e4a46eae5610b69fafa6babd0"
-  integrity sha512-F4aFq01aS6mnAAa0DljNmKr/Kk9y4HVZ1m6/rtJ0ED56cuxINGq3Q9eVAh+z5vcYKe5qnTMvv90vE8vUMFxomg==
+  version "26.4.4"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.4.4.tgz#61f13fb21ab400853c532270e52cc0ed7e502c49"
+  integrity sha512-3lFWKbLxJm34QxyVNNCgXX1u4o/RV0myvA2y2Bxm46iGIjKlaY0own9gIckbjZJPn+WaJEnfPPJ20HHGpoq4yg==
   dependencies:
     "@types/jest" "26.x"
     bs-logger "0.x"
