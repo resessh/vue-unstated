@@ -6618,10 +6618,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vue-demi@^0.4.0:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.4.1.tgz#2261b8afe57b99ef4a6ee82a7bd2e6fe471bdcde"
-  integrity sha512-3xxnqY426eMKhmYdNygYwOvuaJlrgP+aSZLiD5GdCF7cBsMNmUZM7g3RL0NqIuY19WB5CCzuFbi/xW1Nd053xw==
+vue-demi@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.12.0.tgz#b202a01cdfc635443e41faea697d624caac0fa73"
+  integrity sha512-eggsbQSQEJKlvQrtrJLx4J44MIVq5+Z7QetIEh1Na+ZWLgt5Fq0qskQ1QmckTTEoFcUdn36c4K23EjtXZhws7w==
 
 vue-template-compiler@^2.6.12:
   version "2.6.12"
